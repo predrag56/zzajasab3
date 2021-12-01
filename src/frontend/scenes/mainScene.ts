@@ -40,7 +40,7 @@ export default class MainScene extends Phaser.Scene {
 
     this.add.text(500,300,"STRESS anywhere to JUMP", {fontSize:"100px"}).setOrigin(.5,.5)
 
-    this.playerLabel =  this.add.text(-50,-50," this is you").setOrigin(.5,1)
+    this.playerLabel =  this.add.text(-50,-50," OVO SI TI!").setOrigin(.5,1)
     this.playersConnectedText = this.add.text(20,20,"")
     this.matter.world.setBounds(0,0,1024,750, 50,true, true, true, true)
     
@@ -109,7 +109,7 @@ export default class MainScene extends Phaser.Scene {
     //send a position update only if position is changed
     return ()=>{
 
-      this.playersConnectedText.setText("clients connected: "+(this.opponents.length+1).toString())
+      this.playersConnectedText.setText("CLIENTS connected: "+(this.opponents.length+1).toString())
 
 
       if(this.player && (Math.abs(this.player.x - oldX) > 3 || Math.abs(this.player.y - oldY) > 3)){
